@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en-gb" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Info</title>
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" >
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,500,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="js/uikit.js"></script>
+</head>
+
+<body>
+
+<header class="uk-background-primary uk-background-norepeat uk-background-cover uk-background-center-center uk-light" 
+	style="background-image: url(img/header.jpg);">
+	<nav class="uk-navbar-container">
+	  <div class="uk-container">
+	    <div data-uk-navbar>
+	      <div class="uk-navbar-center uk-hidden@m">
+	        <a class="uk-navbar-item uk-logo" href="/">Security of Daily Food</a>
+	      </div>
+	    </div>
+	  </div>
+	</nav>
+	
+	<div class="uk-section uk-section-small uk-section-hero uk-position-relative" data-uk-scrollspy="cls: uk-animation-slide-bottom-medium; repeat: true">
+		<div class="uk-container">
+			<div class="hero-search uk-margin-bottom">
+				<div class="uk-position-relative">
+					<form class="uk-search uk-search-default uk-width-1-1" name="search-hero" onSubmit="return true;" action="search" method="post">
+						<span data-uk-search-icon="ratio: 1.2"></span>
+						<input id="search-hero" class="uk-search-input uk-form-large uk-border-rounded" type="search"
+						name="content"	 placeholder="Search for information about food" autocomplete="off" data-minchars="1" data-maxitems="30">
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+
+<div class="uk-section uk-section-muted">
+  <div class="uk-container">
+    <div class="uk-background-default uk-border-rounded uk-box-shadow-small">
+      <div class="uk-container uk-container-xsmall uk-padding-large">
+        <article class="uk-article">
+          <h1 class="uk-article-title">information</h1>
+          <div class="uk-article-content">
+			<p>厂商名称：<span id="manufacturer" th:text="${manufacturer}"> </span></p>
+            <p>厂商地区：<span id="area" th:text="${area}"> </span></p>
+            <p>生产食品：<span id="name" th:text="${name}"></span></p>
+            <p>合格编号：<span id="sign" th:text="${sign}"> </span></p>
+            <p>联系方式：<span id="contact" th:text="${contact}"> </span></p>
+            <form class="uk-form-stacked uk-margin-medium-top" action="/" method="get">
+              <div class="uk-text-center">
+                <input class="uk-button uk-button-primary uk-border-rounded" type="submit" value="返回">
+              </div>
+            </form>  
+		</div>
+        </article>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="offcanvas" data-uk-offcanvas="flip: true; overlay: true">
+  <div class="uk-offcanvas-bar">
+    <div class="uk-margin-top uk-text-center">
+      <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center">
+        <div>
+          <a href="https://twitter.com/" data-uk-icon="icon: twitter" class="uk-icon-link" target="_blank"></a>
+        </div>
+        <div>
+          <a href="https://www.facebook.com/" data-uk-icon="icon: facebook" class="uk-icon-link" target="_blank"></a>
+        </div>
+        <div>
+          <a href="https://www.instagram.com/" data-uk-icon="icon: instagram" class="uk-icon-link" target="_blank"></a>
+        </div>
+        <div>
+          <a href="https://vimeo.com/" data-uk-icon="icon: vimeo" class="uk-icon-link" target="_blank"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="uk-section uk-text-center uk-text-muted">
+	<div class="uk-container uk-container-small">
+		<div>
+			<ul class="uk-subnav uk-flex-center">
+				<li><a href="/">Home</a></li>
+				<li><a href="category">category</a></li>
+				<li><a href="contact">Contact</a></li>
+			</ul>
+		</div>
+		<div class="uk-margin-medium">
+			<div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center">
+				<div class="uk-first-column">
+					<a href="https://twitter.com/" data-uk-icon="icon: twitter" class="uk-icon-link uk-icon" target="_blank"></a>
+				</div>
+				<div>
+					<a href="https://www.facebook.com/" data-uk-icon="icon: facebook" class="uk-icon-link uk-icon"
+						target="_blank"></a>
+				</div>
+				<div>
+					<a href="https://www.instagram.com/" data-uk-icon="icon: instagram" class="uk-icon-link uk-icon"
+						target="_blank"></a>
+				</div>
+				<div>
+					<a href="https://vimeo.com/" data-uk-icon="icon: vimeo" class="uk-icon-link uk-icon" target="_blank"></a>
+				</div>
+			</div>
+		</div>
+		<div class="uk-margin-medium uk-text-small uk-link-muted">Made by a <a  
+				href="https://drifter.works/">Drifter</a> in Antigua Guatemala.</div>
+	</div>
+</footer>
+
+<script src="js/awesomplete.js"></script>
+<script src="js/custom.js"></script>
+
+
+</body>
+
+</html>

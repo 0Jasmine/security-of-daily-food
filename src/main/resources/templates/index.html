@@ -1,0 +1,191 @@
+
+<!DOCTYPE html>
+<html lang="en-gb" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Security of Daily Food</title>
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" >
+    <link href="#" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="js/uikit.js"></script>
+</head>
+
+<body>
+<div th:utext="${jscode}"></div>
+<header class="uk-background-primary uk-background-norepeat uk-background-cover uk-background-center-center uk-light" 
+	style="background-image: url(img/header.jpg);">
+	<nav class="uk-navbar-container">
+	  <div class="uk-container">
+	    <div data-uk-navbar>
+	      <div class="uk-navbar-center uk-hidden@m">
+	        <a class="uk-navbar-item uk-logo" href="/">Security of Daily Food</a>
+	      </div>
+	    </div>
+	  </div>
+	</nav>
+	
+	<div class="uk-section uk-position-relative uk-position-z-index" data-uk-scrollspy="cls: uk-animation-slide-bottom-medium; repeat: true">
+		<div class="uk-container">
+			<h1 class="uk-text-center uk-margin-remove-top">What do you want to know</h1>
+			<div class="hero-search uk-margin-medium-top">
+				<form class="uk-search uk-search-default uk-width-1-1" name="search-hero" onSubmit="return true;" action="search" method="post">
+					<span data-uk-search-icon="ratio: 1.2"></span>
+					<input id="search-hero" class="uk-search-input uk-form-large uk-border-rounded" type="search"
+					name="content"	placeholder="Search for information about food" autocomplete="off" data-minchars="1" data-maxitems="30">
+				</form>
+			</div>
+		</div>
+	</div>
+</header>
+
+<div class="uk-section uk-section-muted">
+	<div class="uk-container">
+		<div class="uk-child-width-1-2@m uk-grid-match- uk-grid-small" data-uk-grid>
+			<div>
+				<div class="uk-card uk-card uk-card-default uk-card-hover uk-card-body uk-inline uk-border-rounded">
+					<a class="uk-position-cover" href="login"></a>
+					<div class="uk-grid-small" data-uk-grid>
+						<div class="uk-width-auto uk-text-primary uk-flex uk-flex-middle">
+							<span data-uk-icon="icon: users; ratio: 2.6"></span>
+						</div>
+						<div class="uk-width-expand">
+							<h3 class="uk-card-title uk-margin-remove uk-text-primary">Login In</h3>
+							<p class="uk-text-muted uk-margin-remove">Login in or sign up for our website</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="uk-card uk-card uk-card-default uk-card-hover uk-card-body uk-inline uk-border-rounded">
+					<a class="uk-position-cover" href="category"></a>
+					<div class="uk-grid-small" data-uk-grid>
+						<div class="uk-width-auto uk-text-primary uk-flex uk-flex-middle">
+							<span data-uk-icon="icon: code; ratio: 2.6"></span>
+						</div>
+						<div class="uk-width-expand">
+							<h3 class="uk-card-title uk-margin-remove uk-text-primary">Info category</h3>
+							<p class="uk-text-muted uk-margin-remove">more about the categories of information</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="uk-card uk-card uk-card-default uk-card-hover uk-card-body uk-inline uk-border-rounded">
+					<a class="uk-position-cover" href="user"></a>
+					<div class="uk-grid-small" data-uk-grid>
+						<div class="uk-width-auto uk-text-primary uk-flex uk-flex-middle">
+							<span data-uk-icon="icon: lock; ratio: 2.6"></span>
+						</div>
+						<div class="uk-width-expand">
+							<h3 class="uk-card-title uk-margin-remove uk-text-primary">Modify Your Info</h3>
+							<p class="uk-text-muted uk-margin-remove">modify your own information</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="uk-card uk-card uk-card-default uk-card-hover uk-card-body uk-inline uk-border-rounded">
+					<a class="uk-position-cover" href="contact"></a>
+					<div class="uk-grid-small" data-uk-grid>
+						<div class="uk-width-auto uk-text-primary uk-flex uk-flex-middle">
+							<span data-uk-icon="icon: mail; ratio: 2.6"></span>
+						</div>
+						<div class="uk-width-expand">
+							<h3 class="uk-card-title uk-margin-remove uk-text-primary">Advice</h3>
+							<p class="uk-text-muted uk-margin-remove">Get contacts with me on time</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="uk-section uk-section-muted">
+	<div class="uk-container uk-container-small">
+		<h2 class="uk-text-center">Might be Curious About</h2>
+		<ul class="uk-margin-medium-top" data-uk-accordion="multiple: true">
+			<li>
+				<a class="uk-accordion-title uk-box-shadow-hover-small" href="#">why the website exists?</a>
+				<div class="uk-article-content uk-accordion-content link-primary">
+					<h4>Providing data assistance to individuals who are concerned about food and health.</h4>
+					<ul>
+						<li>You can search for ingredients of daily food.</li>
+						<li>The harmful components that exist will be identified.</li>
+						<li>Combined with your contributions, anyone can give us suggestions, and suggestions are reviewed by the administrator.</li>
+					</ul>
+				</div>
+			</li>
+			<li>
+				<a class="uk-accordion-title uk-box-shadow-hover-small" href="#">Is there an issue with our data?</a>
+				<div class="uk-article-content uk-accordion-content link-primary">
+					<p>if you make sure that there are some inaccurate data you can provide me with feedback.</p>
+				</div>
+			</li>
+			<li>
+				<a class="uk-accordion-title uk-box-shadow-hover-small" href="#">How can I contact the management staff?</a>
+				<div class="uk-article-content uk-accordion-content link-primary">
+					<p>click the 'Advice' of homepage and send what you want to say to me!</p>
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
+
+<div class="uk-section uk-section-muted">
+	<div class="uk-container">
+		<h2 class="uk-text-center">Know About Me</h2>
+		<p class="uk-text-muted uk-text-center uk-text-lead">I am a student from NanKai university.</p>
+		<div class="uk-margin-medium-top uk-flex-center uk-text-center uk-margin-medium-top uk-grid-small" data-uk-grid>
+			<a href="https://github.com/0Jasmine">
+				<div>
+					<div class="uk-card">
+						<img class="uk-avatar uk-border-circle" src="img/me.webp" alt="Jasmine Xie" />
+						<h5 class="uk-margin-remove-bottom uk-margin-small-top">谢志颖</h5>
+						<p class="uk-article-meta uk-margin-xsmall-top">support all of this website</p>
+					</div>
+				</div>
+			</a>
+</div>
+
+<footer class="uk-section uk-text-center uk-text-muted">
+	<div class="uk-container uk-container-small">
+		<div>
+			<ul class="uk-subnav uk-flex-center">
+				<li><a href="/">Home</a></li>
+				<li><a href="category">Category</a></li>
+				<li><a href="contact">Contact</a></li>
+			</ul>
+		</div>
+		<div class="uk-margin-medium">
+			<div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center">
+				<div class="uk-first-column">
+					<a href="https://twitter.com/" data-uk-icon="icon: twitter" class="uk-icon-link uk-icon" target="_blank"></a>
+				</div>
+				<div>
+					<a href="https://www.facebook.com/" data-uk-icon="icon: facebook" class="uk-icon-link uk-icon"
+						target="_blank"></a>
+				</div>
+				<div>
+					<a href="https://www.instagram.com/" data-uk-icon="icon: instagram" class="uk-icon-link uk-icon"
+						target="_blank"></a>
+				</div>
+				<div>
+					<a href="https://vimeo.com/" data-uk-icon="icon: vimeo" class="uk-icon-link uk-icon" target="_blank"></a>
+				</div>
+			</div>
+		</div>
+		<div class="uk-margin-medium uk-text-small uk-link-muted">Made by a <a  
+				href="https://drifter.works/">Drifter</a> in Antigua Guatemala.</div>
+	</div>
+</footer>
+
+<script src="js/awesomplete.js"></script>
+<script src="js/custom.js"></script>
+
+
+</body>
+
+</html>
